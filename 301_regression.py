@@ -13,8 +13,8 @@ y = x.pow(2) + 0.2 * torch.rand(
 # The code below is deprecated in Pytorch 0.4. Now, autograd directly supports tensors
 # x, y = Variable(x), Variable(y)
 
-# plt.scatter(x.data.numpy(), y.data.numpy())
-# plt.show()
+plt.scatter(x.data.numpy(), y.data.numpy())
+plt.show()
 
 
 class Net(torch.nn.Module):
